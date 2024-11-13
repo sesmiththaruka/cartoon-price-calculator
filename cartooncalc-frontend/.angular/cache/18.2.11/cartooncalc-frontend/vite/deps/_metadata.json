@@ -1,0 +1,67 @@
+{
+  "hash": "97144185",
+  "configHash": "4d8cf520",
+  "lockfileHash": "a85ef598",
+  "browserHash": "a6615f88",
+  "optimized": {
+    "@angular/common": {
+      "src": "../../../../../../node_modules/@angular/common/fesm2022/common.mjs",
+      "file": "@angular_common.js",
+      "fileHash": "4d6c3d2e",
+      "needsInterop": false
+    },
+    "@angular/common/http": {
+      "src": "../../../../../../node_modules/@angular/common/fesm2022/http.mjs",
+      "file": "@angular_common_http.js",
+      "fileHash": "b3a453be",
+      "needsInterop": false
+    },
+    "@angular/core": {
+      "src": "../../../../../../node_modules/@angular/core/fesm2022/core.mjs",
+      "file": "@angular_core.js",
+      "fileHash": "617a564d",
+      "needsInterop": false
+    },
+    "@angular/forms": {
+      "src": "../../../../../../node_modules/@angular/forms/fesm2022/forms.mjs",
+      "file": "@angular_forms.js",
+      "fileHash": "d3d28522",
+      "needsInterop": false
+    },
+    "@angular/platform-browser": {
+      "src": "../../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
+      "file": "@angular_platform-browser.js",
+      "fileHash": "b8336bf8",
+      "needsInterop": false
+    },
+    "@angular/platform-browser/animations/async": {
+      "src": "../../../../../../node_modules/@angular/platform-browser/fesm2022/animations/async.mjs",
+      "file": "@angular_platform-browser_animations_async.js",
+      "fileHash": "a39c5ffd",
+      "needsInterop": false
+    },
+    "@angular/router": {
+      "src": "../../../../../../node_modules/@angular/router/fesm2022/router.mjs",
+      "file": "@angular_router.js",
+      "fileHash": "12ae016a",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-Z6SHI7YL": {
+      "file": "chunk-Z6SHI7YL.js"
+    },
+    "chunk-RPWBSJJV": {
+      "file": "chunk-RPWBSJJV.js"
+    },
+    "browser-JAIUIUVY": {
+      "file": "browser-JAIUIUVY.js"
+    },
+    "chunk-ZLWQD4XV": {
+      "file": "chunk-ZLWQD4XV.js"
+    },
+    "chunk-PSGA3BG2": {
+      "file": "chunk-PSGA3BG2.js"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+cartooncalc-frontend/node_modules
+cartooncalc-frontend/dist
+cartooncalc-frontend/npm-debug.log
+cartooncalc-frontend/yarn-error.log
+cartooncalc-frontend//tmp
+cartooncalc-frontend/out-tsc
+cartooncalc-frontend/bazel-out

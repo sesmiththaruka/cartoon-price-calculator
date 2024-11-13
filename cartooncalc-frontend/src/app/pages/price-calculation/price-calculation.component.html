@@ -1,0 +1,47 @@
+
+<body style=" font-family: 'Roboto', sans-serif;
+            padding: 20px;">
+    <div class="form-container">
+        <h2 class="text-center">Product Order Form</h2>
+        <form [formGroup]="orderForm" (ngSubmit)="calculateTotal()">
+            <div class="mb-3">
+                <label for="productSelect" class="form-label">Select Product</label>
+                <select formControlName="productSelect" class="form-select" id="selectedProduct">
+                    <option value="" disabled selected>Choose...</option>
+                    @for (item of products; track $index) {
+                    <option [value]="item.id">
+                        {{ item.name }}
+                    </option>
+                    }
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="quantitySingle" class="form-label">Quantity (Single Unit)</label>
+                <input type="number" formControlName="quantitySingle" class="form-control" placeholder="Enter quantity">
+                <div *ngIf="orderForm.get('quantitySingle')?.invalid && (orderForm.get('quantitySingle')?.touched || orderForm.get('quantitySingle')?.dirty)" class="text-danger">
+                    <div *ngIf="orderForm.get('quantitySingle')?.errors?.['required']">Quantity is required.</div>
+                    <div *ngIf="orderForm.get('quantitySingle')?.errors?.['min']">Quantity must be at least 0.</div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="quantityCartoon" class="form-label">Quantity (Cartoon)</label>
+                <input type="number" formControlName="quantityCartoon" class="form-control"
+                    placeholder="Enter quantity">
+                    <div *ngIf="orderForm.get('quantityCartoon')?.invalid && (orderForm.get('quantityCartoon')?.touched || orderForm.get('quantityCartoon')?.dirty)" class="text-danger">
+                        <div *ngIf="orderForm.get('quantityCartoon')?.errors?.['required']">Quantity is required.</div>
+                        <div *ngIf="orderForm.get('quantityCartoon')?.errors?.['min']">Quantity must be at least 0.</div>
+                    </div>
+            </div>
+            <div class="total-price text-center">
+                Total Price: $<span>{{ totalPrice }}</span>
+            </div>
+            <div class="text-center mt-4">
+                <button type="button" class="btn btn-primary" (click)="calculateTotal()">Calculate Total</button>
+            </div>
+        </form>
+    </div>
+
+
+
+</body>
+
